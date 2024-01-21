@@ -1,6 +1,6 @@
 .r-container{
     overflow: hidden;
-    position: relative;
+    /* position: relative; */
 }
 .r-head{
     margin-bottom: 2rem;
@@ -41,4 +41,21 @@
 }
 .swiper-horizontal{
     overflow: visible;
+}
+
+.r-button {
+    /* position: absolute; */
+    gap: 1rem;
+    top: -4rem;
+    right: 0;
+    z-index: 1000;
+}
+.r-button button {
+    font-size: 1.2rem;
+    padding: 0.2rem 0.8rem;
+    color: blue;
+    border: none;
+    border-radius: 5px;
+    background-color: #EEEEFF;
+    cursor: pointer;
 }
