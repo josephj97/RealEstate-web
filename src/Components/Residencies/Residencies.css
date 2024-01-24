@@ -1,9 +1,10 @@
 .r-container{
     overflow: hidden;
-    position: relative;
 }
 .r-head{
     margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
 }
 .r-card{
     gap: 0.6rem;
@@ -42,24 +43,39 @@
 .swiper-horizontal{
     overflow: visible;
 }
-.r-swiper{
+/* .r-swiper{
     padding-top: 72px !important; 
     margin-top: -100px;
-}
+} */
 
-.r-button {
-    position: absolute;
+.d-buttons-container{
     gap: 1rem;
-    top: 1rem;
-    right: 0;
-    /* z-index: 1000; */
+    align-items: center;
 }
-.r-button button {
+.d-button {
     font-size: 1.2rem;
     padding: 0.2rem 0.8rem;
-    color: blue;
+    color: var(--blue);
     border: none;
     border-radius: 5px;
-    background-color: #EEEEFF;
+    background-color: var(--lightBlue);
     cursor: pointer;
+}
+.slider-swiper-button-disabled .d-button{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.d-flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.ml-auto{
+    margin-left: auto;
+}
+
+.w-100{
+    width: 100%;
 }
